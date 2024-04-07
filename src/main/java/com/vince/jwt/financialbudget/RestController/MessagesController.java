@@ -1,4 +1,4 @@
-package com.vince.jwt.financialbudget.RestController;
+package com.vince.jwt.financialbudget.restController;
 
 import org.springframework.web.bind.annotation.RestController;
 
@@ -15,8 +15,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class MessagesController {
 
     @GetMapping("/messages")
-    public String messages(){
-        return "Hello";
+    public ResponseEntity<List<String>> messages(){
+        return ResponseEntity.ok(Arrays.asList("One","Two"));
 
     }
     
