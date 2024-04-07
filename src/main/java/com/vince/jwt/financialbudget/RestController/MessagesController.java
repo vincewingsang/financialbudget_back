@@ -16,7 +16,7 @@ public class MessagesController {
 
     @GetMapping("/messages")
     public ResponseEntity<List<String>> messages(){
-        return ResponseEntity.ok(Arrays.asList("One","Two"));
+        return ResponseEntity.ok(Arrays.asList("One"));
 
     }
     
